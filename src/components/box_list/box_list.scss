@@ -1,0 +1,87 @@
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20upx;
+    font-family: OPPOSans;
+    font-style: normal;
+    font-weight: normal;
+    .box {
+        position: relative;
+        flex: 1;
+        min-width: 35%;
+        background: #fff;
+        box-shadow: 0px 8upx 20upx rgba(0, 0, 0, 0.05);
+        border-radius: 20upx;
+        margin: 20upx;
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: calc(100% - 72upx);
+            height: calc(100% - 72upx);
+            padding: 36upx;
+            .icon {
+                width: 70upx;
+                height: auto;
+            }
+            .label {
+                flex: 1;
+                padding: 15upx 0;
+                font-size: 36upx;
+                line-height: 48upx;
+                font-weight: 600;
+            }
+            .num {
+                font-size: 32upx;
+                line-height: 42upx;
+                color: #2f80ed;
+                font-weight: bold;
+                span {
+                    font-size: 28upx;
+                    line-height: 36upx;
+                    color: #666666;
+                    font-weight: 600;
+                    margin-left: 10upx;
+                }
+            }
+        }
+
+        .add_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: calc(100% - 72upx);
+            height: calc(100% - 72upx);
+            padding: 36upx;
+
+            .add_icon {
+                width: 110upx;
+                height: auto;
+            }
+
+            .label {
+                font-family: OPPOSans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 28upx;
+                line-height: 36upx;
+                text-align: center;
+                color: #666666;
+                margin-top: 24upx;
+            }
+        }
+    }
+    .box::before {
+        content: "";
+        padding-top: 100%;
+        vertical-align: middle;
+        display: block;
+    }
+}

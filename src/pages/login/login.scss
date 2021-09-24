@@ -1,0 +1,56 @@
+* {
+    font-family: 微软雅黑 Microsoft YaHei;
+}
+
+.body {
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 40rpx;
+        image {
+            width: 80rpx;
+            height: auto;
+            margin-right: 30rpx;
+            border-radius: 100rpx;
+        }
+        .name {
+            font-size: 36rpx;
+        }
+    }
+    .line {
+        background: rgba($color: #000000, $alpha: 0.1);
+        width: 100%;
+        height: 30rpx;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin-top: 20rpx;
+    image {
+        width: 40%;
+        height: auto;
+    }
+    .text {
+        font-size: 32rpx;
+        margin: 30rpx 0 80rpx;
+    }
+}
+
+.login_btn {
+    display: flex;
+    .loginBtn {
+        width: 90vw;
+        font-size: 32rpx !important;
+        font-weight: bold;
+        padding: 10rpx 0;
+    }
+
+    button[type="default"] {
+        color: #fff;
+        background-color: #40a9ff;
+    }
+}
