@@ -1,0 +1,21 @@
+.body {
+    margin: 24upx 12upx;
+    .upload_box {
+        position: relative;
+        width: 190upx;
+        height: 190upx;
+        border-radius: 8upx;
+        background: rgba(47, 128, 237, 0.06);
+        .icon {
+            width: 100%;
+            height: auto;
+        }
+        .loading {
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            width: 60%;
+            height: 60%;
+        }
+    }
+}

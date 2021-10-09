@@ -5,6 +5,7 @@
     font-family: OPPOSans;
     font-style: normal;
     font-weight: normal;
+    padding-bottom: 150upx;
     .box {
         position: relative;
         flex: 1;
@@ -33,6 +34,9 @@
                 font-size: 36upx;
                 line-height: 48upx;
                 font-weight: 600;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
             .num {
                 font-size: 32upx;
@@ -81,7 +85,7 @@
     .box::before {
         content: "";
         padding-top: 100%;
-        vertical-align: middle;
         display: block;
+        vertical-align: middle;
     }
 }

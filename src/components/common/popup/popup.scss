@@ -1,0 +1,101 @@
+.popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 1000;
+    .popup_mask {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        outline: 0;
+        background: rgba($color: #000000, $alpha: 0.7);
+    }
+    .popup_modal {
+        box-sizing: border-box;
+        color: rgba(0,0,0,.85);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        list-style: none;
+        font-feature-settings: "tnum","tnum";
+        pointer-events: none;
+        position: relative;
+        top: 100px;
+        width: auto;
+        max-width: 100vw;
+        margin: 0 auto;
+        padding: 0 0 24px;
+        .popup_content {
+            position: relative;
+            background: #fff;
+            background-clip: padding-box;
+            border: 0;
+            border-radius: 4upx;
+            box-shadow: 0 6upx 12upx -8upx rgb(0 0 0 / 12%), 0 12upx 32upx 0 rgb(0 0 0 / 8%),
+                0 18upx 56upx 16upx rgb(0 0 0 / 5%);
+            pointer-events: auto;
+            margin: auto;
+            .popup_header {
+                display: flex;
+                align-items: center;
+                padding: 10upx 40upx;
+                .title {
+                    font-size: 32upx;
+                    text-align: left;
+                }
+                .icons {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    .icon {
+                        width: 48rpx;
+                        height: auto;
+                        padding: 10upx 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .popup_body {
+                min-height: 100rpx;
+            }
+            .popup_line {
+                height: 2upx;
+                background: rgba($color: #000000, $alpha: 0.08);
+            }
+            .popup_footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    border-radius: 0upx;
+                    text-shadow: 0 -2upx 0 rgb(0 0 0 / 12%);
+                    box-shadow: 0 4upx 0 rgb(0 0 0 / 5%);
+                    font-size: 30upx;
+                    // margin: 10upx 20upx;
+                }
+                button::after {
+                    border: none !important;
+                }
+                .ok {
+                    flex: 1;
+                    color: #fff;
+                    background: rgb(24, 144, 255);
+                    border: 1px solid #1890ff;
+                }
+                .cancel {
+                    flex: 1;
+                    color: #000;
+                    background: #fff;
+                    // border: 1px solid #d9d9d9;
+                    border: none;
+                }
+            }
+        }
+    }
+}

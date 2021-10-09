@@ -1,0 +1,87 @@
+.body {
+    padding: 58upx;
+    font-family: OPPOSans;
+    font-style: normal;
+    font-weight: normal;
+    background-image: url('/static/img/top-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    padding-top: 144upx;
+    .label {
+        font-size: 48upx;
+        line-height: 64upx;
+        color: #333333;
+    }
+    .msg {
+        font-size: 28upx;
+        line-height: 36upx;
+        color: #999999;
+        margin-top: 12upx;
+    }
+    .boxs {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 72upx;
+        .hide_input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            color: rgba(47, 128, 237, 0);
+        }
+        .box {
+            flex: 1;
+            position: relative;
+            background: rgba(47, 128, 237, 0.1);
+            margin: 8upx;
+            border-radius: 12upx;
+            .text {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-size: 40upx;
+            }
+            .focus {
+                position: absolute;
+                left: calc(50% - 2upx);
+                top: calc(50% - 23upx);
+                background: #2f80ed;
+                width: 4upx;
+                height: 46upx;
+                animation: fade 0.5s infinite alternate;
+            }
+            @keyframes fade {
+                0%{
+                    opacity:1;
+                }
+                100%{
+                    opacity:0;
+                }
+            }
+        }
+        .box::before {
+            content: "";
+            padding-top: 100%;
+            display: block;
+            vertical-align: middle;
+        }
+    }
+    .error {
+        font-size: 28upx;
+        line-height: 36upx;
+        color: #FF5555;
+        margin-top: 36upx;
+        padding-left: 10upx;
+    }
+}

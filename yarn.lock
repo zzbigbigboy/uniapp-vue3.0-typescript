@@ -1020,9 +1020,9 @@
     stricter-htmlparser2 "^3.9.6"
 
 "@dcloudio/uni-mp-360@^2.0.0":
-  version "2.0.0-alpha-32820210923001"
-  resolved "https://registry.yarnpkg.com/@dcloudio/uni-mp-360/-/uni-mp-360-2.0.0-alpha-32820210923001.tgz#93cfb8a54cd68d37affe4ebb46a3f3ad41ebc945"
-  integrity sha512-rkcU5cTbg6M+KG2MKfcWWJWJPsSje9tykmoXEh2LOLxl7mJn/M0DVCHc3VSfdp3RJ2pc5zOwkJu6dsof4bRysg==
+  version "2.0.0-alpha-32920210930002"
+  resolved "https://registry.npmmirror.com/@dcloudio/uni-mp-360/download/@dcloudio/uni-mp-360-2.0.0-alpha-32920210930002.tgz#95f48fed0d21ce4ca1534862954e1c6e3f8fd86f"
+  integrity sha1-lfSP7Q0hzkyhU0hilU4cbj+P2G8=
 
 "@dcloudio/uni-mp-alipay@^2.0.0":
   version "2.0.0"
@@ -1088,6 +1088,11 @@
     "@babel/traverse" "^7.3.3"
     "@babel/types" "^7.3.3"
     vue-template-compiler "^2.6.10"
+
+"@dcloudio/uni-ui@^1.4.5":
+  version "1.4.5"
+  resolved "https://registry.npmmirror.com/@dcloudio/uni-ui/download/@dcloudio/uni-ui-1.4.5.tgz#2f51a44bbf26445ecc87bb1e929c9fa15ab7093c"
+  integrity sha1-L1GkS78mRF7Mh7sekpyfoVq3CTw=
 
 "@dcloudio/vue-cli-plugin-hbuilderx@^2.0.0":
   version "2.0.0"
@@ -2114,6 +2119,11 @@
     vue-template-es2015-compiler "^1.9.0"
   optionalDependencies:
     prettier "^1.18.2"
+
+"@vue/devtools-api@^6.0.0-beta.11":
+  version "6.0.0-beta.18"
+  resolved "https://registry.npmmirror.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.18.tgz#84c0aff9289a57294cb97490811f69e8a0a67f8a"
+  integrity sha1-hMCv+SiaVylMuXSQgR9p6KCmf4o=
 
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.2"
@@ -10925,10 +10935,12 @@ vue@^3.0.0:
     "@vue/runtime-dom" "3.2.11"
     "@vue/shared" "3.2.11"
 
-vuex@^3.2.0:
-  version "3.6.2"
-  resolved "https://registry.nlark.com/vuex/download/vuex-3.6.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvuex%2Fdownload%2Fvuex-3.6.2.tgz#236bc086a870c3ae79946f107f16de59d5895e71"
-  integrity sha1-I2vAhqhww655lG8QfxbeWdWJXnE=
+vuex@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.nlark.com/vuex/download/vuex-4.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvuex%2Fdownload%2Fvuex-4.0.2.tgz#f896dbd5bf2a0e963f00c67e9b610de749ccacc9"
+  integrity sha1-+Jbb1b8qDpY/AMZ+m2EN50nMrMk=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.11"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

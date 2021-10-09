@@ -8,6 +8,7 @@
 # sass
 # postcss
 # uni-ui
+# vuex
 
 请使用uniapp运行
 
